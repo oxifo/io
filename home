@@ -1,0 +1,231 @@
+<rame>
+  <style type="text/css">
+  *{
+    transition-duration:0.5s;
+  }
+    rame,section{
+      display:block;
+      background:transparent;
+      height:100%;
+    }
+    header{
+      display:flex;
+      height:50px;
+      box-shadow:0px 0px 3px #A4A4A4;
+      border-left:2px solid blue;
+      align-content:center;
+      align-items:center;
+      max-width:420px;
+      position:fixed;
+      z-index:555555;
+      min-width:100%;
+      background:white;
+    }
+    Logo{
+      font-size:33px;
+      font-family:Sans-serif;
+      font-weight:300;
+      margin-left:10px;
+      color:blue;
+    }
+    menu,menu::after,menu::before{
+      display:none;
+      width:30px;
+      margin:6px;
+      background: black;
+      height:2.5px;
+      position:relative;
+      border:0;
+    }
+    menu::after{
+      content:"";
+      position:absolute;
+      top:9px;
+      margin:0;
+    }
+    menu::before{
+      content: "";
+      position: absolute;
+      top:-9px;
+      margin: 0;
+    }
+    search{
+      display:block;
+      width:20px;
+      height:20px;
+      border-radius:30px;
+      border:1.3px solid blue;
+      position:relative;
+      left:45%;
+      transform:rotate(-38deg)
+    }search::after{
+      content:"";
+      display:block;
+      width:1px;
+      height:20px;
+      background:blue;
+      position:absolute;
+      bottom:-21px;
+      left:9px;
+    }
+    Context{
+      display:block;
+      height:90%;
+      background:transparent;
+      overflow:scroll;
+      max-width:420px;
+    }
+    #w{
+    color:blue;
+    display:block;
+    font-size:20px;
+    font-family:Times New Roman;
+    padding:5px;
+    text-transform:uppercase;
+    }
+    #search{
+     width:75%;
+     height:inherit;
+     outline:none;
+     border:none;
+     font-size:22px;
+     color:blue;
+     box-sizing:border-box;
+     padding-left:10px;
+     user-select:none;
+    }
+    ok,cancel{
+      font-size:22px;
+      color:blue;
+      padding:5px;
+      margin-left:40px;
+    }
+    ok{
+    display:none;
+    }
+    #info{
+      display:none;;
+    }
+    #pined{
+      width:95%;
+      height:200px;
+      margin:20px auto;
+      border-radius:4px;
+      border-top-left-radius:0px;
+      position:relative;
+      max-width:420px;
+      box-shadow:1px 1px 4px #C8C8C8;
+      font-family:Times New Roman;
+      box-sizing:border-box;
+      padding:5px;
+      display:flex;
+      align-items:center;
+      overflow:hidden;
+    }
+    #pined:active{
+    width:85%;
+    height:185px;
+    background:lightblue;
+    border-radius:5px;
+    color:white;
+    }
+    #pined embed{
+      max-width:40%;
+      height:auto;
+      border-radius:4px;
+      max-height:250px;
+    }
+    p{
+     margin:5px;
+    }
+    #lr{
+    color:blue;
+    display:block;
+    text-align:center;
+    }
+    result{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:white;
+    top:50px;
+    display:none;
+    overflow:scroll;
+    }
+    #not{
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+    display:block;
+    margin:50px auto;
+    }
+    #choice{
+    width:90%;
+    height:200px;
+    border-radius:5px;
+    box-shadow:0px 0px 2px #D3D3D3;
+    margin:auto;
+    display:grid;
+    grid-template-areas:". . .";
+    }
+    #choice embed{
+      width:55px;border-radius:50px;
+      display:block;
+      margin:auto auto;
+    }
+    #choice div{
+      width:100%;
+      border-radius:50px;
+      display:block;
+      margin:auto auto;
+      text-align:center;
+      font-family:Cursive
+    }
+  </style>
+  <header id="normal">
+    <Logo>&#10070;LULAY&nbsp;&check;</Logo>
+    <search></search>
+  </header>
+  <header id="info">
+  <input type="text"placeholder="SEARCH ARTICALS"id="search"onkeyup="reset()"minlength="4"/>
+  <ok>&check;</ok>
+  <cancel>&#10008;</cancel>
+  </header>
+  <Context>
+  <br/>
+  <br/>
+  <br/>
+    <span id="w"></span>
+     <section id="choice">
+      <div>
+        <embed onclick="window.open('/io/app/index.php')" src="/file/logo/app.png"/>
+        App Store
+      </div>
+     <div>
+            <embed onclick="window.open('/io/play/index.php')" src="/file/logo/g.jpg"/>
+            Game-Zone
+      </div>
+         <div>
+              <embed onclick="window.open('/io/movies/index.php')" src="/file/logo/movie.png"/>
+              Movie House
+            </div>
+      <div>
+        <embed onclick="window.open('/io/Ha Ha/index.php')" src='/file/logo/haha.png'"/>
+        A Pyinn Pyay
+      </div>
+      <div>
+        <embed onclick="window.open('https://hellosayarwon.com')" src="/file/logo/sayarwon.png"/>
+        Hello Sayawon
+      </div>
+     </section>
+    <section id="plane">
+     <i id="lr">Loading Request
+     <br/>
+     <code>
+     အကယ်ဤမည်သည့်တုံ့ပြန်မှုမှမရရှိပါကစာမျက်နှာအား <b>refresh</b>လုပ်ပေးပါ
+     </code>
+     </i>
+    </section>
+  </Context>
+</rame>
+<result></result>

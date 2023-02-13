@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html>
+  <head>
+  <meta name="viewport"content="width=device-width"/>
+  <link rel="icon"href="icon.jpg"/>
+  <link rel="stylesheet"href="style.css"/>
+  <title>LULAY</title>
+   <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+      user-select:none
+    }
+      rame,section{
+        display:block;
+        background:transparent;
+        height:100%;
+        width:100%;
+      }
+       #lr {
+         color: blue;
+         display: block;
+         text-align: center;
+       }
+       code{
+           font-size:15px;
+       }
+    </style>
+  </head>
+  <body>
+    <i id="lr">Loading Request
+    <br/>
+    <code>
+    အကယ်၍မည့်သည့်တုံ့ပြန်မှု့မှမရရှိပါက စာမျက်နှာအား reload လုပ်ပေးပါ</code>
+    </i>
+  <script src="main.js"></script>
+  <script type="text/javascript">
+  let url ="http://0.0.0.0:2222/";
+  let body =document.body;
+  if(window.location.href == url){
+    fetch("/counter.php?id=0&target=000000");
+    }
+  fetch('home')
+    .then(s => s.text())
+    .then(s => body.innerHTML = s);
+  </script>
+  </body>
+</html>
