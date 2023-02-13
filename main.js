@@ -26,7 +26,7 @@ window.onload = function(){
                 location.reload();
             }else{
             x.text().then(i=>plane.innerHTML=i);
-            plane.innerHTML =posted.join('');
+          //plane.innerHTML =posted.join('');
             }
         },1500));
     }
