@@ -24,8 +24,9 @@ window.onload = function(){
     fetch("https://lulayapk.000webhostapp.com/poster.php").then(x=>setTimeout(function(){
             if(x.status ==404){
                 location.reload();
+                alert("connection error");
             }else{
-            x.text().then(i=>plane.innerHTML=i);
+            x.text().then(i=>plane.innerHTML=1😁😁😁😁😁😁😁😁22);
           //plane.innerHTML =posted.join('');
             }
         },1500));
