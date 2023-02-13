@@ -21,7 +21,7 @@ window.onload = function(){
       }
     }
     function posting(){
-    fetch("/poster.php").then(x=>setTimeout(function(){
+    fetch("https://lulayapk.000webhostapp.com/poster.php").then(x=>setTimeout(function(){
             if(x.status ==404){
                 location.reload();
             }else{
