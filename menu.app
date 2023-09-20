@@ -68,7 +68,7 @@
     <hr/>
     <basic>
     <button onclick="Java.LoadPage('file:///android_asset/DownloadList.html','')">Watch OffLine</button>
-    <button>Lastest Movies</button>
+    <button onclick="Java.LoadPage('www.edu-z.rf.gd/','')">LukLin EDU</button>
     </basic>
     <hr/>
     <basic>
